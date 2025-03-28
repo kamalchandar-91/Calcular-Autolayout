@@ -23,20 +23,26 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvn-Mf-MKw">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="135.66666666666666"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2St-NH-29p">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSl-gX-PLW">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="135.66666666666666"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2St-NH-29p">
+                                                        <rect key="frame" x="20" y="0.0" width="353" height="136"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="2St-NH-29p" secondAttribute="bottom" id="Wm6-NE-9uw"/>
+                                                    <constraint firstItem="2St-NH-29p" firstAttribute="top" secondItem="PSl-gX-PLW" secondAttribute="top" id="igu-ud-WTO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2St-NH-29p" secondAttribute="trailing" constant="20" id="kib-qA-IlU"/>
+                                                    <constraint firstItem="2St-NH-29p" firstAttribute="leading" secondItem="PSl-gX-PLW" secondAttribute="leading" constant="20" id="naW-fa-BJ0"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="2St-NH-29p" secondAttribute="trailing" id="2qI-sg-kiL"/>
-                                            <constraint firstAttribute="bottom" secondItem="2St-NH-29p" secondAttribute="bottom" id="Jdf-bc-U8v"/>
-                                            <constraint firstItem="2St-NH-29p" firstAttribute="leading" secondItem="mvn-Mf-MKw" secondAttribute="leading" id="reu-Fh-4U7"/>
-                                            <constraint firstItem="2St-NH-29p" firstAttribute="top" secondItem="mvn-Mf-MKw" secondAttribute="top" id="tUq-g4-oHk"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="WZR-GE-lRo">
                                         <rect key="frame" x="0.0" y="136.66666666666663" width="393" height="135.33333333333337"/>
@@ -190,29 +196,34 @@
                                         <rect key="frame" x="0.0" y="682.66666666666663" width="393" height="135.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wN-pB-X8t">
-                                                <rect key="frame" x="0.0" y="0.0" width="130.33333333333334" height="135.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="196" height="135.33333333333334"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="0">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCu-Yl-YGf">
-                                                <rect key="frame" x="131.33333333333331" y="0.0" width="130.33333333333331" height="135.33333333333334"/>
-                                                <color key="backgroundColor" name="AccentColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title=".">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flt-6o-JhN">
-                                                <rect key="frame" x="262.66666666666669" y="0.0" width="130.33333333333331" height="135.33333333333334"/>
-                                                <color key="backgroundColor" red="1" green="0.57647058823529407" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="=">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="btV-4k-0JC">
+                                                <rect key="frame" x="197" y="0.0" width="196" height="135.33333333333334"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCu-Yl-YGf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="135.33333333333334"/>
+                                                        <color key="backgroundColor" name="AccentColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title=".">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flt-6o-JhN">
+                                                        <rect key="frame" x="98.666666666666686" y="0.0" width="97.333333333333314" height="135.33333333333334"/>
+                                                        <color key="backgroundColor" red="1" green="0.57647058823529407" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
